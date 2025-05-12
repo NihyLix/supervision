@@ -59,7 +59,7 @@ docker-compose up -d
 
 ## 🧭 Étapes suivantes :
 
-### 2. Ajouter la source Prometheus dans Grafana (elle sera à http://IP_MACHINE:9090)
+### 2. Ajouter la source Prometheus dans Grafana :
 
 
 ```
@@ -76,17 +76,6 @@ docker-compose up -d
 -> Import
 ```
 >[!NOTE]
-> 🟢 Tu devrais maintenant avoir un dashboard avec 2 jauges UP/DOWN.
+> 🟢 Il devrait maintenant avoir un dashboard avec 2 jauges UP/DOWN avec 2 graphiques pour le suivi historique.
 
-### 4. Importer un Dashboard Node Exporter (optionnel pour test) :
-```
-Menu latéral → 📊 Dashboards → Import
-ID : 1860 → Node Exporter Full
-Sélectionne ta datasource Prometheus → Importer
-```
-
->[!NOTE]
-> 🟢 Tu devrais maintenant avoir un dashboard complet avec :
-> CPU, RAM, charge, disques, réseau
-> Graphiques temps réel avec historique
 
