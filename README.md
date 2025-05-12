@@ -46,9 +46,6 @@ mkdir -p /prometheus-stack/prometheus/
 ### 2. Ajouter la source Prometheus dans Grafana (elle sera à http://IP_MACHINE:9090)
 
 
->[!CAUTION]
-> Cette partie du readme n'est pas encore approuvé à 100%, les menus ont légèrement changé avec la dernière mise à jour.
-
 ```
 -> Menu latéral (haut à gauche) → ⚙️ Connection → Data Sources
 -> ➕ Add data source → Choisir Prometheus
