@@ -8,8 +8,8 @@ Créer un dashboard type "Jauge" (comme speedtest) affichant le flux DOWN/UP (RX
 
 >[!NOTE]
 > Grafana interprète les informations reçues par Prometheus.
-> Grafana utilise un "scape" c'est-à-dire, un temps d'actualisation à intervalles régulier. Celui-ci est réglé à 1 seconde dans cette configuration.
-> C'est à cause de ce "scape" qu'on ne parle pas de temps réel ; car il y a un délai applicatif avant émission/réception des informations. 
+> Prometheus utilise un "scrape" c'est-à-dire, un temps d'actualisation à intervalles régulier. Celui-ci est réglé à 1 seconde dans cette configuration.
+> C'est à cause de ce "scrape" qu'on ne parle pas de temps réel ; car il y a un délai applicatif avant émission/réception des informations. 
 
 **Résultat :**
 ![Résultats](https://github.com/NihyLix/supervision/blob/b218aec84d98769cebd037ddd224a581f5361950/image.png)
@@ -49,16 +49,21 @@ mkdir -p /prometheus-stack/prometheus/
 > Cette partie du readme n'est pas encore approuvé à 100%, les menus ont légèrement changé avec la dernière mise à jour.
 
 ```
--> Menu latéral → ⚙️ Configuration → Data Sources
+-> Menu latéral (haut à gauche) → ⚙️ Connection → Data Sources
 -> ➕ Add data source → Choisir Prometheus
 -> URL : http://IP_MACHINE:9090
 -> Enregistre
 ```
 ### 3. Importer le fichier .json :
 ```
-Menu latéral → 📊 Dashboards → Import
-blblblblbllblblb (ce menu n'existe pas 🤓)
+-> Menu latéral (haut à gauche) → 📊 Dashboards
+-> New (haut à droite) → Import
+-> Upload dashboard JSON file 
+-> Import
 ```
+>[!NOTE]
+> 🟢 Tu devrais maintenant avoir un dashboard avec 2 jauges UP/DOWN.
+
 ### 4. Importer un Dashboard Node Exporter (optionnel pour test) :
 ```
 Menu latéral → 📊 Dashboards → Import
