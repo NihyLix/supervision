@@ -1,9 +1,9 @@
 # Prometheus+Grafana, affichage du flux en temps presque réel
 
 ### Présentation
-_OS de test : Debian 12 avec VMware Workstation sous Windows 11 24H2_
-Grafana v12.0.0
-Prometheus :
+_OS de test : Debian 12 avec VMware Workstation sous Windows 11 24H2_<br>
+Grafana v12.0.0<br>
+Prometheus :<br>
 ```
 Build information
 version	3.3.1
