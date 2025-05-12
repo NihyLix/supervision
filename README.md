@@ -13,7 +13,8 @@ Créer un dashboard type "Jauge" (comme speedtest) affichant le flux DOWN/UP (RX
 
 **Résultat :**
 ![Résultats](https://github.com/NihyLix/supervision/blob/b218aec84d98769cebd037ddd224a581f5361950/image.png)
-
+![Résultats](https://github.com/NihyLix/supervision/blob/main/image2.png)
+![Résultats](https://github.com/NihyLix/supervision/blob/main/image3.png)
 >[!IMPORTANT]
 >Cette configuration a été effectuée pour écouter sur la carte réseau physique de l'hôte.
 >Le flux réseau doit en conséquent passer par la carte physique pour être vu par prométheus puis interprété par grafana.
