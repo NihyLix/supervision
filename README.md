@@ -27,19 +27,26 @@ prometheus-stack/
 ├── prometheus/
 │   └── prometheus.yml
 ```
-**Commande :**
+**Commandes :**
 ```
 mkdir -p /prometheus-stack/prometheus/
 ```
+=> On ajoute les 2 fichiers .yml à l'endroit indiqué par l'arborescence ci-dessus. 
+
+```
+cd /prometheus-stack/
+docker-compose up -d
+```
+
+>[!IMPORTANT]
+>Remplacer IP_MACHINE par l'adresse IPv4 de la machine (hôte généralement)
+
 >[!TIP]
 >🌐 Accès aux interfaces :<br>
 >Prometheus : http://IP_MACHINE:9090<br>
 >Grafana : http://IP_MACHINE:3000<br>
 >Login : admin<br>
 >Password : admin (à changer à la première connexion)<br>
-
->[!IMPORTANT]
->Remplacer IP_MACHINE par l'adresse IPv4 de la machine (hôte généralement)
 
 ## 🧭 Étapes suivantes :
 
