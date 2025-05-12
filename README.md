@@ -2,6 +2,15 @@
 
 ### Présentation
 _OS de test : Debian 12 avec VMware Workstation sous Windows 11 24H2_
+Grafana v12.0.0
+Prometheus :
+```
+Build information
+version	3.3.1
+branch	HEAD
+buildDate	20250502-15:03:21
+goVersion	go1.24.2
+```
 
 **Objectif :** 
 Créer un dashboard type "Jauge" (comme speedtest) affichant le flux DOWN/UP (RX/TX ; réception/envoie) de manière presque instantanée.
