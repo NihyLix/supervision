@@ -3,8 +3,12 @@
 _OS de test : Debian 12_
 
 **Objectif :** 
-Dashboard affichant le trafic presque instantanéement (2 sec de délai) du réseau en direct.
+Créer un dashboard type "Jauge" (comme speedtest) affichant le flux DOWN/UP (RX/TX ; réception/envoie) de manière presque instantannée.
 Carte réseau de référence : carte physique de l'hôte, le trafic doit passer dessus pour qu'il puisse être interprété par prometheus puis affiché par graphana.
+>[!NOTE]
+>Graphana interpête les informations reçues par Prometheus.
+>Graphana utilise un "scape" c'est à dire, un temps d'actualise à interval régulier. Celui-ci est réglé à 1 seconde dans cette configuration.
+>C'est à cause de ce "scape" qu'on ne parle pas de temps réel; car il y a un délai applicatif avant émission/réception des informations. 
 
 **Résultat :**
 IMG
