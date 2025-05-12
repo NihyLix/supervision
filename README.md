@@ -5,7 +5,6 @@ _OS de test : Debian 12 avec VMware Workstation sous Windows 11 24H2_
 
 **Objectif :** 
 Créer un dashboard type "Jauge" (comme speedtest) affichant le flux DOWN/UP (RX/TX ; réception/envoie) de manière presque instantanée.
-Carte réseau de référence : carte physique de l'hôte, le trafic doit passer dessus pour qu'il puisse être interprété par prometheus puis affiché par grafana.
 
 >[!NOTE]
 > Grafana interprète les informations reçues par Prometheus.
@@ -13,7 +12,7 @@ Carte réseau de référence : carte physique de l'hôte, le trafic doit passer 
 > C'est à cause de ce "scape" qu'on ne parle pas de temps réel ; car il y a un délai applicatif avant émission/réception des informations. 
 
 **Résultat :**
-IMG
+![Résultats](https://github.com/NihyLix/supervision/blob/b218aec84d98769cebd037ddd224a581f5361950/image.png)
 
 >[!IMPORTANT]
 >Cette configuration a été effectuée pour écouter sur la carte réseau physique de l'hôte.
